@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.mycompany.exemplojogobeatemup.BeatemupController"
+      spacing="0"
+      style="-fx-background-color: #1a1a2e;">
+
+    <!-- HUD superior -->
+    <HBox spacing="20"
+          style="-fx-background-color: #2c3e50; -fx-padding: 8 16; -fx-alignment: center-left;">
+
+        <!-- Vida do jogador -->
+        <VBox spacing="2">
+            <Label text="HERÓI"
+                   style="-fx-font-size: 10px; -fx-text-fill: #aaa;"/>
+            <Label fx:id="lblVida"
+                   text="❤❤❤❤❤"
+                   style="-fx-font-size: 16px;"/>
+        </VBox>
+
+        <!-- Fase e inimigos restantes -->
+        <VBox spacing="2">
+            <Label fx:id="lblFase"
+                   text="FASE 1"
+                   style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #fdcb6e;"/>
+            <Label fx:id="lblInimigos"
+                   text="Inimigos: 3"
+                   style="-fx-font-size: 12px; -fx-text-fill: #e17055;"/>
+        </VBox>
+
+        <!-- Dica de controles -->
+        <Label fx:id="lblDica"
+               text="WASD mover  |  ESPAÇO socar"
+               style="-fx-font-size: 12px; -fx-text-fill: #636e72;"/>
+
+    </HBox>
+
+    <!-- Canvas onde o jogo é desenhado -->
+    <Canvas fx:id="canvas" width="640" height="420"/>
+
+</VBox>
