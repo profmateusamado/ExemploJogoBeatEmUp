@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * Testanto o Jogo
+ * Testando o Jogo
  */
 public class App extends Application {
 
